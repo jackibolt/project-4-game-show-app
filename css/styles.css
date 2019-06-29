@@ -58,6 +58,11 @@ button {
   -o-transition: var(--transition);
   transition: var(--transition);
   cursor: pointer;
+
+}
+
+.key:hover {
+  box-shadow: 2px 2px 2px 1px #3a3f58;
 }
 
 #btn__reset {
@@ -87,6 +92,10 @@ button {
 
 .header {
   color: #3a3f58;
+}
+
+h2 {
+  margin-top: 100px;
 }
 
 
@@ -136,10 +145,16 @@ button {
   font-size: var(--font-size-medium);
   color: #FFFFFF;
 }
+.chosen.hover {
+  box-shadow:none;
+}
 
 .wrong {
   background: #f7a964;
   color: #FFFFFF;
+}
+.wrong:hover {
+  box-shadow: none;
 }
 
 .btn__reset {
