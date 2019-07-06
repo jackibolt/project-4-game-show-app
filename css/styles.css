@@ -145,7 +145,7 @@ h2 {
   font-size: var(--font-size-medium);
   color: #FFFFFF;
 }
-.chosen.hover {
+.chosen:hover {
   box-shadow:none;
 }
 

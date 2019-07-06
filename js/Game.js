@@ -90,16 +90,22 @@ class Game {
             game.activePhrase.showMatchedLetter(key.textContent);
             key.className = 'key chosen';
             if (this.checkForWin()){
-                this.gameOver(true);
+                setTimeout(function () {
+                    game.gameOver(true)
+                    }, 1500
+                );
             } 
         }
         else {
             key.className = 'key wrong';
-            key.setAttribute('disabled', true);
+            key.setAttribute('disabled', true); 
             this.removeLife()
             this.checkForWin();
             if (this.missed === 5){
-                this.gameOver(false)
+                setTimeout(function () {
+                    game.gameOver(false)
+                    }, 500
+                );
             }
         }
     }
